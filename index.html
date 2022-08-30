@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nguyễn Mạnh Cường - Full Stack Developer</title>
   <link rel="stylesheet" href="./main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
   <div class="welcome">
@@ -13,12 +14,12 @@
       <img src="./resources/images/macuo-logo.png" alt="Cuong Nguyen" class="header-logo">
       <ul class="header-menu">
         <li><a href="#" class="menu-item">Welcome</a></li>
-        <li><a href="#" class="menu-item">About Me</a></li>
-        <li><a href="#" class="menu-item">Skills</a></li>
-        <li><a href="#" class="menu-item">Experiences</a></li>
-        <li><a href="#" class="menu-item">Education</a></li>
-        <li><a href="#" class="menu-item">Certification</a></li>
-        <li><a href="#" class="menu-item">Contact</a></li>
+        <li><a href="#about-me-area" class="menu-item">About Me</a></li>
+        <li><a href="#skill-area" class="menu-item">Skills</a></li>
+        <li><a href="#experiences-area" class="menu-item">Experiences</a></li>
+        <li><a href="#education-area" class="menu-item">Education</a></li>
+        <li><a href="#certifications-area" class="menu-item">Certification</a></li>
+        <li><a href="#contact-area" class="menu-item">Contact</a></li>
       </ul>
     </div>
   
@@ -37,8 +38,7 @@
     </div>
   </div>
   
-  
-  <div class="data-area content about-me-area ">
+  <div class="data-area content about-me-area" id="about-me-area">
     <div class="data-image-area about-me-image-area">
       <img src="./resources/images/about-me-image-icon3.svg" alt="About me image" class="data-image" />
       <img src="./resources/images/about-me-image-icon2.svg" alt="About me image" class="data-image data-image-icon2" />
@@ -47,7 +47,7 @@
     </div>
     <div class="data-desc-area about-me-desc">
       <p class="small-title">Who am I?</p>
-      <p class="main-title">Full Stack Developer</p>    
+      <p class="main-title" id="main-title">Full Stack Developer</p>    
       <p class="desc">with almost 2 years of 
         experience in designing and developing, testing, 
         debugging, and maintaining within back-end 
@@ -59,10 +59,10 @@
     </div>
   </div>
 
-  <div class="content skills-area">
-    <div class="skills-title-area">
+  <div class="block-area"  id="skill-area">
+    <div class="block-title-area">
       <div class="title">What I've got</div>
-      <div class="note">I'm interested in learning new skills. Below is what I learned.</div>
+      <div class="note">I'm interested in learning new skills. Below is what I learned</div>
       <div class="divide"></div>
     </div>
     <div class="skills-detail-area" id="skills-detail-area" >
@@ -78,31 +78,239 @@
     </div>
   </div>
 
-  <div class="experiences content">
-    <div class="experiences_summary">
-
-    </div>
+  <div class="content block-area experiences-area"  id="experiences-area">
     <div class="experiences_list">
+      <div class="block-title-area">
+        <div class="title">What I've done</div>
+        <div class="note">Learning takes a long time. I think the most important aspect is practice</div>
+        <div class="divide"></div>
+      </div>
+      <div class="experience-detail-area" id="experience-detail-area" >
+        
 
+            <div class="ag-format-container">
+              <div class="js-timeline ag-timeline">
+                <!-- timeline -->
+                <div class="js-timeline_line ag-timeline_line">
+                  <!-- this line to using animation -->
+                  <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
+                </div>
+                <!-- list experience on timeline -->
+                <div class="ag-timeline_list">
+                  <div class="js-timeline_item ag-timeline_item">
+                    <!-- time & title -->
+                    <div class="ag-timeline-card_box">
+                      <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                        <div class="ag-timeline-card_point">2022</div>
+                      </div>
+                      <div class="ag-timeline-card_meta-box">
+                        <div class="ag-timeline-card_meta">Novus Fintech</div>
+                      </div>
+                    </div>
+                    <!-- content -->
+                    <div class="ag-timeline-card_item">
+                      <!-- content card -->
+                      <div class="ag-timeline-card_inner">
+                        <!-- image -->
+                        <div class="ag-timeline-card_img-box">
+                          <img src="./resources/images/novus-fintech-image.png" class="ag-timeline-card_img" width="640" height="360" />
+                        </div>
+                        <!-- desc -->
+                        <div class="ag-timeline-card_info">
+                          <div class="ag-timeline-card_title">Novus Fintech</div>
+                          <div class="ag-timeline-card_desc">
+                            <p class="experience-card_time">09/2021 - 07/2022</p>
+                            <p class="experience-card_role">Back-end Developer</p>
+                            <p class="experience-card_desc">Stock trading system for HK & US market.</p>
+                            <p class="experience-card_note">More information in my CV</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- arrow to timeline -->
+                      <div class="ag-timeline-card_arrow"></div>
+                    </div>
+                  </div>
+        
+                  <div class="js-timeline_item ag-timeline_item">
+                    <div class="ag-timeline-card_box">
+                      <div class="ag-timeline-card_meta-box">
+                        <div class="ag-timeline-card_meta">CDIT</div>
+                      </div>
+                      <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                        <div class="ag-timeline-card_point">2021</div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_item">
+                      <div class="ag-timeline-card_inner">
+                        <div class="ag-timeline-card_img-box">
+                          <img src="./resources/images/cdit-image.jpg" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                        </div>
+                        <div class="ag-timeline-card_info">
+                          <div class="ag-timeline-card_title">CDIT</div>
+                          <div class="ag-timeline-card_desc">
+                            <p class="experience-card_time">10/2020 - 03/2021</p>
+                            <p class="experience-card_role">Back-end Developer</p>
+                            <p class="experience-card_desc">Warehouses & Devices Management system of MobiFone</p>
+                            <p class="experience-card_note">More information in my CV</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ag-timeline-card_arrow"></div>
+                    </div>
+                  </div>
+        
+                  <div class="js-timeline_item ag-timeline_item">
+                    <div class="ag-timeline-card_box">
+                      <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                        <div class="ag-timeline-card_point">2021</div>
+                      </div>
+                      <div class="ag-timeline-card_meta-box">
+                        <div class="ag-timeline-card_meta">University - Freelancer</div>
+                      </div>
+                    </div>
+                    <div class="ag-timeline-card_item">
+                      <div class="ag-timeline-card_inner">
+                        <div class="ag-timeline-card_img-box">
+                          <img src="./resources/images/ptit-image.png" class="ag-timeline-card_img" width="640" height="360" alt="" />
+                        </div>
+                        <div class="ag-timeline-card_info">
+                          <div class="ag-timeline-card_title">University - Freelancer</div>
+                          <div class="ag-timeline-card_desc">
+                            <p class="experience-card_time">2017 - 2022 - I'm still a freelancer now</p>
+                            <p class="experience-card_role">Full Stack Developer</p>
+                            <p class="experience-card_desc">Create some projects for use in school.<br />
+                              Find work as a freelancer.</p>
+                            <p class="experience-card_note">More information in my CV</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ag-timeline-card_arrow"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+      </div>
     </div>
     
   </div>
 
-  <div class="education content">
-  </div>
-
-  <div class="certifications content">
-  </div>
-
-  <div class="contact content">
-  </div>
-
-  <div class="footer content">
-    <div class="shortcuts">
-
+  <div class="education content"  id="education-area">
+    <div class="block-title-area">
+      <div class="title">Education</div>
+      <div class="note">Learning in education is the simplest way</div>
+      <div class="divide"></div>
     </div>
-    <div class="letter">
+    <div class="education-detail-area" id="education-detail-area" >
+      <div class="education-card">
+        <div class="education_timeline-card">
+          <div class="education_timeline">
+            <p class="education_start-time">2022</p>
+            <div class="education_divide-time"></div>
+            <p class="education_end-time">2017</p>
+          </div>
+        </div>
+        <div class="education_title-area">
+          <p class="education_title">
+            BACHELOR DEGREE
+          </p>
+          <p class="education_note">
+            Post and Telecommunications University (PTIT)
+          </p>
+          <div class="divide"></div>
+        </div>
+        <div class="education_desc_area">
+          <ul class="desc_list">
+            <li>Degree grade: Good</li>
+            <li>Good scholarship for 1 semester</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </div>
 
+  <!-- certification block -->
+  <div class="block-area certifications" id="certifications-area">
+    <div class="block-title-area">
+      <div class="title">Certification</div>
+      <div class="note">I got some certificates on my journey</div>
+      <div class="divide"></div>
+    </div>
+    <div class="skills-detail-area" id="certifications-area" >
+      <div class="skill certifications-card">
+        <span></span><span></span><span></span><span></span>
+        <div class="skill-icon-area">
+          <img class="icon" src="./resources/images/toeic-icon.png" title="icon"></img>
+        </div>
+        <p class="title">Toeic 545</p>
+        <p class="item">10-12-2021</p>
+      </div>
+      <div class="skill certifications-card">
+        <span></span><span></span><span></span><span></span>
+        <div class="skill-icon-area">
+          <img class="icon" src="./resources/images/red-hat-icon.png" title="icon"></img>
+        </div>
+        <p class="title">Red Hat System Administration I (RH124)</p>
+        <p class="item">20-04-2022</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact area -->
+  <div class="block-area contact content" id="contact-area">
+    <div class="block-title-area">
+      <div class="title">Contact</div>
+      <div class="note">Thanks for viewing my portfolio. If you want to connect to me, please use one of the methods below</div>
+      <div class="divide"></div>
+    </div>
+    <div class="skills-detail-area">
+      <div class="skill">
+        <span></span><span></span><span></span><span></span>
+        <div class="skill-icon-area">
+          <img class="icon" src="./resources/images/email-icon.png" title="icon"></img>
+        </div>
+        <a class="contact-link" href="mailto:nmcuongmn@gmail.com">nmcuongmn@gmail.com</a>
+      </div>
+      <div class="skill">
+        <span></span><span></span><span></span><span></span>
+        <div class="skill-icon-area">
+          <img class="icon" src="./resources/images/linkedin-icon.png" title="icon"></img>
+        </div>
+        <a class="contact-link" href="https://www.linkedin.com/in/cuong-nguyen-macuo/">cuong-nguyen-macuo</a>
+      </div>
+      <div class="skill">
+        <span></span><span></span><span></span><span></span>
+        <div class="skill-icon-area">
+          <img class="icon" src="./resources/images/telephone.png" title="icon"></img>
+        </div>
+        <a class="contact-link" href="tel:+84826823730">0826823730</a>
+      </div>
+      <div class="skill">
+        <span></span><span></span><span></span><span></span>
+        <div class="skill-icon-area">
+          <img class="icon" src="./resources/images/github-icon.png" title="icon"></img>
+        </div>
+        <a class="contact-link" href="https://github.com/NguyenCuong-VN">NguyenCuong-VN</a>
+      </div>
+      <div class="skill">
+        <span></span><span></span><span></span><span></span>
+        <div class="skill-icon-area">
+          <img class="icon" src="./resources/images/cv-icon.png" title="icon"></img>
+        </div>
+        <a class="contact-link" href="https://drive.google.com/file/d/1KOrGR6IjO6rGMYDDfLf6WuyBuoVSHKdv/view?usp=sharing">My CV</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <!-- <div class="shortcuts">
+
+    </div> -->
+    <div class="letter">
+      Made with love by Macuo
     </div>
   
   </div>

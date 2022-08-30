@@ -82,7 +82,6 @@ const addTableSkill = () => {
     appendText += "</div>";
     skillTables += appendText;
   }
-  console.log(skillTables);
   const skillsDetailArea = document.getElementById("skills-detail-area");
   if (skillsDetailArea) {
     skillsDetailArea.insertAdjacentHTML("beforeend", skillTables);
@@ -90,3 +89,105 @@ const addTableSkill = () => {
 };
 
 addTableSkill();
+
+//add hover title about me
+const titleAbout = document.getElementById("main-title");
+if (titleAbout) {
+  titleAbout.onmouseover = (event) => {
+    event.target.innerText = "Full Stack Overflow :D";
+  };
+  titleAbout.onmouseout = (event) => {
+    event.target.innerText = "Full Stack Developer";
+  };
+}
+
+//experience timeline animation
+(function ($) {
+  $(window).on("scroll", function () {
+    fnOnScroll();
+  });
+
+  $(window).on("resize", function () {
+    fnOnResize();
+  });
+
+  var agTimeline = $(".js-timeline"),
+    agTimelineLine = $(".js-timeline_line"),
+    agTimelineLineProgress = $(".js-timeline_line-progress"),
+    agTimelinePoint = $(".js-timeline-card_point-box"),
+    agTimelineItem = $(".js-timeline_item"),
+    agOuterHeight = $(window).outerHeight(), // include padding,margin,...
+    agHeight = $(window).height(), //not include
+    f = -1,
+    agFlag = false;
+
+  function fnOnScroll() {
+    offsetScroll = $(window).scrollTop(); //get current position of scroll bar
+
+    fnUpdateFrame();
+  }
+
+  function fnOnResize() {
+    offsetScroll = $(window).scrollTop();
+    agHeight = $(window).height();
+
+    fnUpdateFrame();
+  }
+
+  function fnUpdateWindow() {
+    agFlag = false;
+
+    //recalc line position
+    agTimelineLine.css({
+      top: agTimelineItem.first().find(agTimelinePoint).offset().top - agTimelineItem.first().offset().top, //draw line from first point time
+      bottom: agTimeline.offset().top + agTimeline.outerHeight() - agTimelineItem.last().find(agTimelinePoint).offset().top //draw line to last point time
+    });
+
+    f !== offsetScroll && ((f = offsetScroll), agHeight, fnUpdateProgress());
+  }
+
+  function fnUpdateProgress() {
+    // offset last item
+    var offsetLastItem = agTimelineItem.last().find(agTimelinePoint).offset().top;
+
+    //if scroll over 1/2 screen start animation timeline
+    i = offsetLastItem + offsetScroll - $(window).scrollTop();
+    a = agTimelineLineProgress.offset().top + offsetScroll - $(window).scrollTop();
+    n = offsetScroll - a + agOuterHeight / 2; // bat dau tinh scroll tu 1/2 man hinh nen + them 1/2 outerheight
+    i <= offsetScroll + agOuterHeight / 2 && (n = i - a); //neu offset last item < 1/2 man hinh thi set luon
+    agTimelineLineProgress.css({ height: n + "px" });
+
+    agTimelineItem.each(function () {
+      var offsetTop = $(this).find(agTimelinePoint).offset().top;
+
+      offsetTop + offsetScroll - $(window).scrollTop() < offsetScroll + 0.5 * agOuterHeight ? $(this).addClass("js-ag-active") : $(this).removeClass("js-ag-active");
+    });
+  }
+
+  function fnUpdateFrame() {
+    agFlag || requestAnimationFrame(fnUpdateWindow);
+    agFlag = true;
+  }
+})(jQuery);
+
+//scroll visible element animation
+// const observer = new IntersectionObserver(
+//   (entries) => {
+//     if (entries?.length > 0 && entries[0]) {
+//       entries.forEach((item) => {
+//         if (item?.isIntersecting === true) {
+//           console.log(item.target.className);
+//           item.target.style.transform = "translateX(0%)";
+//         }
+//       });
+//     }
+//   },
+//   { threshold: [0.2] }
+// );
+
+// observer.observe(document.getElementById("about-me-stone"));
+// observer.observe(document.getElementById("skill-area"));
+// observer.observe(document.getElementById("experiences-area"));
+// observer.observe(document.getElementById("education-area"));
+// observer.observe(document.getElementById("certifications-area"));
+// observer.observe(document.getElementById("contact-area"));
