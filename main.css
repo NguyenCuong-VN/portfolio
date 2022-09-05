@@ -441,9 +441,11 @@ html {
   width: 2px;
   height: 0%;
 }
+.skill:focus span:nth-child(odd),
 .skill:hover span:nth-child(odd) {    /* so le */
   width: 100%;
 }
+.skill:focus span:nth-child(even)
 .skill:hover span:nth-child(even) {    /* so chan */
   height: 100%;
 }
@@ -818,6 +820,7 @@ img {
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
+.education_timeline:focus, 
 .education_timeline:hover {
   transform: scale(1.1) rotate(360deg);
 }
