@@ -445,7 +445,7 @@ html {
 .skill:hover span:nth-child(odd) {    /* so le */
   width: 100%;
 }
-.skill:focus span:nth-child(even)
+.skill:focus span:nth-child(even),
 .skill:hover span:nth-child(even) {    /* so chan */
   height: 100%;
 }
