@@ -6,16 +6,19 @@ window.onscroll = function () {
 function headerColor() {
   let header = document.getElementById("header");
   let menuItems = document.getElementsByClassName("menu-item");
-  if (window.pageYOffset > 0) {
+  let headerLogo = document.getElementById("header-logo");
+  if (window.pageYOffset > 1) {
     header.classList.add("header--scroll");
+    headerLogo.src = "./resources/images/macuo-logo-primary-color.svg";
     changeStyleMenuItems(menuItems, true);
   } else {
     header.classList.remove("header--scroll");
+    headerLogo.src = "./resources/images/macuo-logo.svg";
     changeStyleMenuItems(menuItems, false);
   }
 }
 function changeStyleMenuItems(menuItems, isSet) {
-  if (menuItems?.length === 0) return;
+  if (menuItems?.length === 1) return;
   for (let index = 0; index < menuItems.length; index++) {
     const element = menuItems[index];
     isSet ? element.classList.add("menu-item--scroll") : element.classList.remove("menu-item--scroll");
