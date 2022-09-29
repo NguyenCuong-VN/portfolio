@@ -1,8 +1,9 @@
-// change style header when scroll
 window.onscroll = function () {
   headerColor();
+  loadContainerOnScroll();
 };
 
+// change style header when scroll
 function headerColor() {
   let header = document.getElementById("header");
   let menuItems = document.getElementsByClassName("menu-item");
@@ -23,6 +24,16 @@ function changeStyleMenuItems(menuItems, isSet) {
     const element = menuItems[index];
     isSet ? element.classList.add("menu-item--scroll") : element.classList.remove("menu-item--scroll");
   }
+}
+
+// load container on scroll
+const items = document.querySelectorAll(".item-block");
+function loadContainerOnScroll() {
+  items.forEach((item) => {
+    if (item.offsetTop - window.scrollY < 500) {
+      item.classList.add("active-load-container");
+    }
+  });
 }
 
 // typing effect
@@ -67,10 +78,11 @@ const addTableSkill = () => {
   };
 
   let skillTables = "";
+  const itemAnimationDelaysLoading = ["02", "04", "06", "08"];
   for (let skill of Object.keys(dataSkill)) {
     const detail = dataSkill[skill];
     const icon = iconSkill[skill];
-    let appendText = `<div class="skill">
+    let appendText = `<div class="load-on-scroll animation-delay-${itemAnimationDelaysLoading[Math.floor(Math.random() * itemAnimationDelaysLoading.length)]} skill">
       <span></span><span></span><span></span><span></span>
       <div class="skill-icon-area">
         <img class="icon" src="${icon}"></img>
