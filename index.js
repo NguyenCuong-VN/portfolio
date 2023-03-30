@@ -53,8 +53,8 @@ welcomeRoleLoad();
 //add skill data table
 const addTableSkill = () => {
   const dataSkill = {
-    "PROGRAMMING LANGUAGES": ["JavaScript", "Java", "PHP", "Python", "HTML, CSS", "C/C++"],
-    "FRAMEWORKS & PLATFORMS": ["NodeJS", "ReactJs / React Native", "Android", "JQuery", "Bootstrap"],
+    "PROGRAMMING LANGUAGES, MARK UP": ["JavaScript", "Java", "PHP", "Python", "HTML, CSS", "Ruby"],
+    "FRAMEWORKS & PLATFORMS": ["NodeJS", "ReactJs / React Native", "Android", "JQuery", "Bootstrap", "Ruby on Rails"],
     DATABASE: ["MySQL", "InfluxDB", "Redis", "MongoDB", "Firebase", "Tools: Elastic Search"],
     "Cyber Security": ["Linux / Unix", "Web Security", "Network"],
     "VERSION CONTROL": ["Git"],
@@ -64,17 +64,19 @@ const addTableSkill = () => {
       "Good understanding about the Agile and Scrum process",
       "Good understanding software design, database design, RestfulAPI",
       "Good time management, presentation, and teamwork skills"
-    ]
+    ],
+    "CLOUD SYSTEM": ["Tencent Stack", "AWS Stack"]
   };
 
   const iconSkill = {
-    "PROGRAMMING LANGUAGES": "./resources/images/programing-icon.png",
+    "PROGRAMMING LANGUAGES, MARK UP": "./resources/images/programing-icon.png",
     "FRAMEWORKS & PLATFORMS": "./resources/images/platform-icon.png",
     DATABASE: "./resources/images/database-icon.png",
     "Cyber Security": "./resources/images/cybersec-icon.png",
     "VERSION CONTROL": "./resources/images/version-control-icon.png",
     "FOREIGN LANGUAGE": "./resources/images/foreign-language-icon.png",
-    KNOWLEDGE: "./resources/images/knowledge-icon.png"
+    KNOWLEDGE: "./resources/images/knowledge-icon.png",
+    "CLOUD SYSTEM": "./resources/images/cloud-icon.png"
   };
 
   let skillTables = "";
@@ -104,6 +106,121 @@ const addTableSkill = () => {
 };
 
 addTableSkill();
+
+//add experiences timeline
+const addTimelineExperiences = () => {
+  const dataExperiences = [
+    {
+      mineStone: "Now",
+      name: "Pixta VietNam",
+      coverPhoto: "./resources/images/pixta-logo.jpg",
+      timeline: "12/2022 - Now",
+      role: "FullStack Developer",
+      description: "Maintain & develop new features for item flows",
+      note: "More information in my CV"
+    },
+    {
+      mineStone: "2022",
+      name: "Napa Global",
+      coverPhoto: "./resources/images/Napa_Logo.jpg",
+      timeline: "10/2022 - 12/2022 (disband branch)",
+      role: "Back-end Developer",
+      description: "Task & Reward platform with NFTs implement.",
+      note: "More information in my CV"
+    },
+    {
+      mineStone: "2022",
+      name: "Novus Fintech",
+      coverPhoto: "./resources/images/novus-fintech-image.png",
+      timeline: "09/2021 - 07/2022",
+      role: "Back-end Developer",
+      description: "Stock trading system for HK & US market.",
+      note: "More information in my CV"
+    },
+    {
+      mineStone: "2021",
+      name: "CDIT",
+      coverPhoto: "./resources/images/cdit-image.jpg",
+      timeline: "10/2020 - 03/2021",
+      role: "Back-end Developer",
+      description: "Warehouses & Devices Management system of MobiFone",
+      note: "More information in my CV"
+    },
+    {
+      mineStone: "2021",
+      name: "University - Freelancer",
+      coverPhoto: "./resources/images/ptit-image.png",
+      timeline: "2017 - 2022 - I'm still a freelancer now",
+      role: "Full Stack Developer",
+      description: "Create some projects for use in school.<br />Find work as a freelancer.",
+      note: "More information in my CV"
+    }
+  ];
+
+  let experiencesTimeline = "";
+  let isTitleRight = true;
+  for (const experience of dataExperiences) {
+    if (!experience?.mineStone) continue;
+
+    let appendText = `
+      <div class="js-timeline_item ag-timeline_item">
+        <div class="ag-timeline-card_box">
+          ${
+            // mineStone & title, using CSS to render depend position of 2 field
+            isTitleRight
+              ? `
+            <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+              <div class="ag-timeline-card_point">${experience.mineStone}</div>
+            </div>
+            <div class="ag-timeline-card_meta-box">
+              <div class="ag-timeline-card_meta">${experience.name}</div>
+            </div>
+            `
+              : `
+            <div class="ag-timeline-card_meta-box">
+              <div class="ag-timeline-card_meta">Novus Fintech</div>
+            </div>
+            <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+              <div class="ag-timeline-card_point">2022</div>
+            </div>
+            `
+          }
+        </div>
+        <!-- content -->
+        <div class="ag-timeline-card_item">
+          <!-- content card -->
+          <div class="ag-timeline-card_inner">
+            <!-- image -->
+            <div class="ag-timeline-card_img-box">
+              <img src="${experience.coverPhoto}" class="ag-timeline-card_img" width="640" height="360" />
+            </div>
+            <!-- desc -->
+            <div class="ag-timeline-card_info">
+              <div class="ag-timeline-card_title">${experience.name}</div>
+              <div class="ag-timeline-card_desc">
+                <p class="experience-card_time">${experience.timeline}</p>
+                <p class="experience-card_role">${experience.role}</p>
+                <p class="experience-card_desc">${experience.description}</p>
+                <p class="experience-card_note">${experience.note}</p>
+              </div>
+            </div>
+          </div>
+          <!-- arrow to timeline -->
+          <div class="ag-timeline-card_arrow"></div>
+        </div>
+      </div>
+    `;
+    experiencesTimeline += appendText;
+
+    isTitleRight = !isTitleRight;
+  }
+  const experienceDetailArea = document.getElementById("ag-timeline_list");
+  if (experienceDetailArea) {
+    experienceDetailArea.insertAdjacentHTML("beforeend", experiencesTimeline);
+  }
+};
+
+addTimelineExperiences();
 
 //add hover title about me
 const titleAbout = document.getElementById("main-title");
