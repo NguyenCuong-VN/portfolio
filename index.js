@@ -147,12 +147,12 @@ const addTimelineExperiences = () => {
       note: "More information in my CV"
     },
     {
-      mineStone: "2021",
+      mineStone: "Now",
       name: "University - Freelancer",
       coverPhoto: "./resources/images/ptit-image.png",
-      timeline: "2017 - 2022 - I'm still a freelancer now",
+      timeline: "2019 - I'm still a freelancer now",
       role: "Full Stack Developer",
-      description: "Create some projects for use in school.<br />Find work as a freelancer.",
+      description: "Create / Develop / Maintain products for client as a freelancer",
       note: "More information in my CV"
     }
   ];
@@ -178,10 +178,10 @@ const addTimelineExperiences = () => {
             `
               : `
             <div class="ag-timeline-card_meta-box">
-              <div class="ag-timeline-card_meta">Novus Fintech</div>
+              <div class="ag-timeline-card_meta">${experience.name}</div>
             </div>
             <div class="js-timeline-card_point-box ag-timeline-card_point-box">
-              <div class="ag-timeline-card_point">2022</div>
+              <div class="ag-timeline-card_point">${experience.mineStone}</div>
             </div>
             `
           }
