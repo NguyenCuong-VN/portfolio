@@ -111,7 +111,7 @@ addTableSkill();
 const addTimelineExperiences = () => {
   const dataExperiences = [
     {
-      mineStone: "Now",
+      mineStone: "2022",
       name: "Pixta VietNam",
       coverPhoto: "./resources/images/pixta-logo.jpg",
       timeline: "12/2022 - Now",
@@ -129,7 +129,7 @@ const addTimelineExperiences = () => {
       note: "More information in my CV"
     },
     {
-      mineStone: "2022",
+      mineStone: "2021",
       name: "Novus Fintech",
       coverPhoto: "./resources/images/novus-fintech-image.png",
       timeline: "09/2021 - 07/2022",
@@ -138,7 +138,7 @@ const addTimelineExperiences = () => {
       note: "More information in my CV"
     },
     {
-      mineStone: "2021",
+      mineStone: "2020",
       name: "CDIT",
       coverPhoto: "./resources/images/cdit-image.jpg",
       timeline: "10/2020 - 03/2021",
@@ -147,7 +147,7 @@ const addTimelineExperiences = () => {
       note: "More information in my CV"
     },
     {
-      mineStone: "Now",
+      mineStone: "2019",
       name: "University - Freelancer",
       coverPhoto: "./resources/images/ptit-image.png",
       timeline: "2019 - I'm still a freelancer now",
