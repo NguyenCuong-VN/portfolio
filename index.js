@@ -116,7 +116,7 @@ const addTimelineExperiences = () => {
       coverPhoto: "./resources/images/pixta-logo.jpg",
       timeline: "12/2022 - Now",
       role: "FullStack Developer",
-      description: "Maintain & develop new features for item flows",
+      description: "Maintain & develop new features for selling image, footage,... marketplace",
       note: "More information in my CV"
     },
     {
