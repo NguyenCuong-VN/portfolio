@@ -54,7 +54,7 @@ welcomeRoleLoad();
 const addTableSkill = () => {
   const dataSkill = {
     "PROGRAMMING LANGUAGES, MARK UP": ["JavaScript", "Java", "PHP", "Python", "HTML, CSS", "Ruby"],
-    "FRAMEWORKS & PLATFORMS": ["NodeJS", "ReactJs / React Native", "Android", "JQuery", "Bootstrap", "Ruby on Rails"],
+    "FRAMEWORKS & PLATFORMS": ["NodeJS", "ReactJs / React Native / NextJS", "Android", "JQuery", "Bootstrap", "Ruby on Rails"],
     DATABASE: ["MySQL", "InfluxDB", "Redis", "MongoDB", "Firebase", "Tools: Elastic Search"],
     "Cyber Security": ["Linux / Unix", "Web Security", "Network"],
     "VERSION CONTROL": ["Git"],
@@ -116,7 +116,7 @@ const addTimelineExperiences = () => {
       coverPhoto: "./resources/images/pixta-logo.jpg",
       timeline: "12/2022 - Now",
       role: "FullStack Developer",
-      description: "Maintain & develop new features for selling image, footage,... marketplace",
+      description: "Maintain & develop new features for selling image, footage,... marketplace. Planning & developing new product about booking photographer.",
       note: "More information in my CV"
     },
     {
