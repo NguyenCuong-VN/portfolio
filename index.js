@@ -116,7 +116,7 @@ const addTimelineExperiences = () => {
       coverPhoto: "./resources/images/pixta-logo.jpg",
       timeline: "12/2022 - Now",
       role: "FullStack Developer",
-      description: "Maintain & develop new features for selling image, footage,... marketplace. Planning & developing new product about booking photographer.",
+      description: "Maintain & develop new features for selling image, footage,... marketplace. Lead of tech team to analysis, designing and developing new business for booking photographer.",
       note: "More information in my CV"
     },
     {
@@ -125,7 +125,7 @@ const addTimelineExperiences = () => {
       coverPhoto: "./resources/images/Napa_Logo.jpg",
       timeline: "10/2022 - 12/2022 (disband branch)",
       role: "Back-end Developer",
-      description: "Task & Reward platform with NFTs implement.",
+      description: "Minor lead of tech team to develop new project earn money by doing task with NFT",
       note: "More information in my CV"
     },
     {
@@ -134,16 +134,16 @@ const addTimelineExperiences = () => {
       coverPhoto: "./resources/images/novus-fintech-image.png",
       timeline: "09/2021 - 07/2022",
       role: "Back-end Developer",
-      description: "Stock trading system for HK & US market.",
+      description: "Improve stock trading system for HK & US market.",
       note: "More information in my CV"
     },
     {
       mineStone: "2020",
       name: "CDIT",
       coverPhoto: "./resources/images/cdit-image.jpg",
-      timeline: "10/2020 - 03/2021",
+      timeline: "10/2020 - 04/2021",
       role: "Back-end Developer",
-      description: "Warehouses & Devices Management system of MobiFone",
+      description: "Improve warehouses & Devices Management system of MobiFone",
       note: "More information in my CV"
     },
     {
@@ -152,7 +152,7 @@ const addTimelineExperiences = () => {
       coverPhoto: "./resources/images/ptit-image.png",
       timeline: "2019 - I'm still a freelancer now",
       role: "Full Stack Developer",
-      description: "Create / Develop / Maintain products for client as a freelancer",
+      description: "I take a job direct from client or Work tasks on Upwork/Freelancer from leader of another team.",
       note: "More information in my CV"
     }
   ];
