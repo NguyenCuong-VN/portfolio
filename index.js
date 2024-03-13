@@ -149,7 +149,7 @@ const addTimelineExperiences = () => {
     {
       mineStone: "2019",
       name: "University - Freelancer",
-      coverPhoto: "./resources/images/ptit-image.png",
+      coverPhoto: "./resources/images/freelancers-learning.png",
       timeline: "2019 - I'm still a freelancer now",
       role: "Full Stack Developer",
       description: "I take a job direct from client or Work tasks on Upwork/Freelancer from leader of another team.",
