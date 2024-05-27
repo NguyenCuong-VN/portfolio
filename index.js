@@ -58,7 +58,7 @@ const addTableSkill = () => {
     DATABASE: ["MySQL", "InfluxDB", "Redis", "MongoDB", "Firebase", "Tools: Elastic Search"],
     "Cyber Security": ["Linux / Unix", "Web Security", "Network"],
     "VERSION CONTROL": ["Git"],
-    "FOREIGN LANGUAGE": ["TOEIC 545/990"],
+    "FOREIGN LANGUAGE": ["English"],  // Exp: TOEIC 900
     KNOWLEDGE: [
       "Good understanding about design Highly Message Realtime System, Microservice System",
       "Good understanding about the Agile and Scrum process",
