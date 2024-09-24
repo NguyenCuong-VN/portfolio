@@ -55,8 +55,8 @@ const addTableSkill = () => {
   const dataSkill = {
     "PROGRAMMING LANGUAGES, MARK UP": ["JavaScript", "Java", "PHP", "Python", "HTML, CSS", "Ruby"],
     "FRAMEWORKS & PLATFORMS": ["NodeJS", "ReactJs / React Native / NextJS", "Android", "JQuery", "Bootstrap", "Ruby on Rails"],
-    DATABASE: ["MySQL", "InfluxDB", "Redis", "MongoDB", "Firebase", "Tools: Elastic Search"],
-    "Cyber Security": ["Linux / Unix", "Web Security", "Network"],
+    DATABASE: ["MySQL", "Postgres", "InfluxDB", "Redis", "MongoDB", "Firebase", "Tools: Elastic Search"],
+    "Cyber Security (Basic)": ["Linux / Unix", "Web Security"],
     "VERSION CONTROL": ["Git"],
     "FOREIGN LANGUAGE": ["English"],  // Exp: TOEIC 900
     KNOWLEDGE: [
@@ -65,7 +65,7 @@ const addTableSkill = () => {
       "Good understanding software design, database design, RestfulAPI",
       "Good time management, presentation, and teamwork skills"
     ],
-    "CLOUD SYSTEM": ["Tencent Stack", "AWS Stack"]
+    "CLOUD SYSTEM": ["Tencent Stack", "AWS Stack", "Domain", "CDN"]
   };
 
   const iconSkill = {
@@ -111,10 +111,19 @@ addTableSkill();
 const addTimelineExperiences = () => {
   const dataExperiences = [
     {
+      mineStone: "2024",
+      name: "MenuCoster",
+      coverPhoto: "./resources/images/menucoster-logo.png",
+      timeline: "08/2024 - Now",
+      role: "Backend Developer / DevOps",
+      description: "In charge for analysing, planning and developing new refactor version of current product. Maintain & Planning for new infrastructure system for better performance & scalability",
+      note: "More information in my CV"
+    },
+    {
       mineStone: "2022",
       name: "Pixta VietNam",
       coverPhoto: "./resources/images/pixta-logo.jpg",
-      timeline: "12/2022 - Now",
+      timeline: "12/2022 - 06/2024",
       role: "FullStack Developer",
       description: "Maintain & develop new features for selling image, footage,... marketplace. Lead of tech team to analysis, designing and developing new business for booking photographer.",
       note: "More information in my CV"
