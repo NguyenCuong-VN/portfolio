@@ -72,7 +72,7 @@ const addTableSkill = () => {
     "PROGRAMMING LANGUAGES, MARK UP": "./resources/images/programing-icon.png",
     "FRAMEWORKS & PLATFORMS": "./resources/images/platform-icon.png",
     DATABASE: "./resources/images/database-icon.png",
-    "Cyber Security": "./resources/images/cybersec-icon.png",
+    "Cyber Security (Basic)": "./resources/images/cybersec-icon.png",
     "VERSION CONTROL": "./resources/images/version-control-icon.png",
     "FOREIGN LANGUAGE": "./resources/images/foreign-language-icon.png",
     KNOWLEDGE: "./resources/images/knowledge-icon.png",
