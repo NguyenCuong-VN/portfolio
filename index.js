@@ -113,7 +113,7 @@ const addTimelineExperiences = () => {
     {
       mineStone: "2025",
       name: "Twenty Tech",
-      coverPhoto: "./resources/images/twenty-tech-image.png",
+      coverPhoto: "./resources/images/twenty-tech-logo.png",
       timeline: "10/2024 - Now",
       role: "Technical leader",
       description: "In charge VN side for all tech things (architect, tech stack, server, etc) and tech teams for many products of UK company - TMG Group: TMQuote, TMGateway, etc.",
