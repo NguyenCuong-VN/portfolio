@@ -115,7 +115,7 @@ const addTimelineExperiences = () => {
       name: "Twenty Tech",
       coverPhoto: "./resources/images/twenty-tech-logo.png",
       timeline: "10/2024 - Now",
-      role: "Technical leader",
+      role: "Technical lead",
       description: "In charge VN side for all tech things (architect, tech stack, server, etc) and tech teams for many products of UK company - TMG Group: TMQuote, TMGateway, etc.",
       note: "More information in my CV"
     },
@@ -133,7 +133,7 @@ const addTimelineExperiences = () => {
       name: "Pixta VietNam",
       coverPhoto: "./resources/images/pixta-logo.jpg",
       timeline: "12/2022 - 06/2024",
-      role: "FullStack Developer",
+      role: "Technical lead",
       description: "Maintain & develop new features for selling image, footage,... marketplace. Lead of tech team to analysis, designing and developing new business for booking photographer.",
       note: "More information in my CV"
     },
@@ -247,7 +247,7 @@ if (titleAbout) {
     event.target.innerText = "Full Stack Overflow :D";
   };
   titleAbout.onmouseout = (event) => {
-    event.target.innerText = "Full Stack Developer";
+    event.target.innerText = "Software Developer";
   };
 }
 
