@@ -54,16 +54,16 @@ welcomeRoleLoad();
 const addTableSkill = () => {
   const dataSkill = {
     "PROGRAMMING LANGUAGES, MARK UP": ["JavaScript", "Java", "PHP", "Python", "HTML, CSS", "Ruby"],
-    "FRAMEWORKS & PLATFORMS": ["NodeJS", "ReactJs / React Native / NextJS", "Android", "JQuery", "Bootstrap", "Ruby on Rails"],
+    "FRAMEWORKS & PLATFORMS": ["NodeJS", "ReactJs / React Native / NextJS", "Ruby on Rails"],
     DATABASE: ["MySQL", "Postgres", "InfluxDB", "Redis", "MongoDB", "Firebase", "Tools: Elastic Search"],
     "Cyber Security (Basic)": ["Linux / Unix", "Web Security"],
     "VERSION CONTROL": ["Git"],
-    "FOREIGN LANGUAGE": ["English"],  // Exp: TOEIC 900
+    "LANGUAGES": ["Vietnamese (Native)", "English (Communicate)"],  // Exp: TOEIC 900
     KNOWLEDGE: [
       "Good understanding about design Highly Message Realtime System, Microservice System",
       "Good understanding about the Agile and Scrum process",
       "Good understanding software design, database design, RestfulAPI",
-      "Good time management, presentation, and teamwork skills"
+      "Good leadership, time management, presentation, and teamwork skills"
     ],
     "CLOUD SYSTEM": ["Tencent Stack", "AWS Stack", "Domain", "CDN"]
   };
@@ -111,10 +111,19 @@ addTableSkill();
 const addTimelineExperiences = () => {
   const dataExperiences = [
     {
+      mineStone: "2025",
+      name: "Twenty Tech",
+      coverPhoto: "./resources/images/twenty-tech-image.png",
+      timeline: "10/2024 - Now",
+      role: "Technical leader",
+      description: "In charge VN side for all tech things (architect, tech stack, server, etc) and tech teams for many products of UK company - TMG Group: TMQuote, TMGateway, etc.",
+      note: "More information in my CV"
+    },
+    {
       mineStone: "2024",
       name: "MenuCoster",
       coverPhoto: "./resources/images/menucoster-logo.png",
-      timeline: "08/2024 - Now",
+      timeline: "08/2024 - 10/2024",
       role: "Backend Developer / DevOps",
       description: "In charge for analysing, planning and developing new refactor version of current product. Maintain & Planning for new infrastructure system for better performance & scalability",
       note: "More information in my CV"
