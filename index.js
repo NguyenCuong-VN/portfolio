@@ -58,7 +58,7 @@ const addTableSkill = () => {
     DATABASE: ["MySQL", "Postgres", "InfluxDB", "Redis", "MongoDB", "Firebase", "Tools: Elastic Search"],
     "Cyber Security (Basic)": ["Linux / Unix", "Web Security"],
     "VERSION CONTROL": ["Git"],
-    "LANGUAGES": ["Vietnamese (Native)", "English (Communicate)"],  // Exp: TOEIC 900
+    "LANGUAGES": ["Vietnamese (Native speaker)", "English (Communicate)"],  // Exp: TOEIC 900
     KNOWLEDGE: [
       "Good understanding about design Highly Message Realtime System, Microservice System",
       "Good understanding about the Agile and Scrum process",
@@ -74,7 +74,7 @@ const addTableSkill = () => {
     DATABASE: "./resources/images/database-icon.png",
     "Cyber Security (Basic)": "./resources/images/cybersec-icon.png",
     "VERSION CONTROL": "./resources/images/version-control-icon.png",
-    "FOREIGN LANGUAGE": "./resources/images/foreign-language-icon.png",
+    "LANGUAGES": "./resources/images/foreign-language-icon.png",
     KNOWLEDGE: "./resources/images/knowledge-icon.png",
     "CLOUD SYSTEM": "./resources/images/cloud-icon.png"
   };
@@ -116,7 +116,7 @@ const addTimelineExperiences = () => {
       coverPhoto: "./resources/images/twenty-tech-logo.png",
       timeline: "10/2024 - Now",
       role: "Technical lead",
-      description: "In charge VN side for all tech things (architect, tech stack, server, etc) and tech teams for many products of UK company - TMG Group: TMQuote, TMGateway, etc.",
+      description: "In charge VN side for all tech things (architect, tech stack, server, etc) and tech teams for many products of UK company ecosystem - TMG Group: TMQuote, TMGateway, TMChatbox etc.",
       note: "More information in my CV"
     },
     {
@@ -166,11 +166,11 @@ const addTimelineExperiences = () => {
     },
     {
       mineStone: "2019",
-      name: "University - Freelancer",
+      name: "Freelance - Work for myself",
       coverPhoto: "./resources/images/freelancers-learning.png",
       timeline: "2019 - I'm still a freelancer now",
       role: "Full Stack Developer",
-      description: "I take a job direct from client or Work tasks on Upwork/Freelancer from leader of another team.",
+      description: "I’m also is a freelancer/work for myself when I do not join any company.",
       note: "More information in my CV"
     }
   ];
