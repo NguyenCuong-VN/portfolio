@@ -111,7 +111,7 @@ addTableSkill();
 const addTimelineExperiences = () => {
   const dataExperiences = [
     {
-      mineStone: "2025",
+      mineStone: "2024",
       name: "Twenty Tech",
       coverPhoto: "./resources/images/twenty-tech-logo.png",
       timeline: "10/2024 - Now",
@@ -123,7 +123,7 @@ const addTimelineExperiences = () => {
       mineStone: "2024",
       name: "MenuCoster",
       coverPhoto: "./resources/images/menucoster-logo.png",
-      timeline: "08/2024 - 10/2024",
+      timeline: "07/2024 - 10/2024",
       role: "Backend Developer / DevOps",
       description: "In charge for analysing, planning and developing new refactor version of current product. Maintain & Planning for new infrastructure system for better performance & scalability",
       note: "More information in my CV"
@@ -150,7 +150,7 @@ const addTimelineExperiences = () => {
       mineStone: "2021",
       name: "Novus Fintech",
       coverPhoto: "./resources/images/novus-fintech-image.png",
-      timeline: "09/2021 - 07/2022",
+      timeline: "06/2021 - 07/2022",
       role: "Back-end Developer",
       description: "Improve stock trading system for HK & US market.",
       note: "More information in my CV"
