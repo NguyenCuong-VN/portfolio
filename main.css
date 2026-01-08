@@ -940,6 +940,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 90px;
+  align-items: center;
 }
 
 .education-card {
