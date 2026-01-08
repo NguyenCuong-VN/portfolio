@@ -938,6 +938,7 @@ img {
 .education-detail-area {
   position: relative;
   display: flex;
+  flex-direction: column;
 }
 
 .education-card {
