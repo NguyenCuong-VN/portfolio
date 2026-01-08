@@ -939,6 +939,7 @@ img {
   position: relative;
   display: flex;
   flex-direction: column;
+  gap: 90px;
 }
 
 .education-card {
